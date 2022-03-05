@@ -2780,7 +2780,8 @@ a {
   height: 100vh; }
 
 .aligner-item {
-  max-width: 50%;
+  width: 90%;
+  max-width: 1200px;
   text-align: center; }
   .aligner-item img.icon {
     max-width: 128px;
@@ -2789,7 +2790,7 @@ a {
     margin-bottom: 2rem; }
   .aligner-item img.logo {
     width: 50%;
-    max-width: 388px;
+    min-width: 356px;
     min-width: 256px; }
   .aligner-item ul.socials {
     list-style: none;
