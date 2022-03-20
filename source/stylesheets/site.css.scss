@@ -1,7 +1,7 @@
 @import 'normalize';
 @import 'animate';
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 html,
 body {
@@ -10,12 +10,12 @@ body {
 }
 
 body {
-  background: #fec618;
+  background: #e5d1b5;
   text-align: center;
-  font-family: 'Bitter', serif;
-  font-size: 18px;
+  font-family: 'Open Sans', serif;
+  font-size: 16px;
   font-weight: 500;
-  color: #050504;
+  color: #242322;
 }
 
 h1 {
@@ -24,11 +24,29 @@ h1 {
 }
 
 a {
-  color: #222;
-  font-weight: 400;
+  color: #242322;
+  font-weight: 700;
   text-decoration: none;
   letter-spacing: .6px;
   cursor: pointer;
+}
+
+.button {
+  border: 1px solid #242322;
+  padding: 15px 20px;
+  border-radius: 30px;
+  background: #242322;
+  color: #fff;
+  display: inline-block;
+
+  &.outlined {
+    background: transparent !important;
+    color: #423f3b !important;
+  }
+
+  i {
+    margin-right: 10px;
+  }
 }
 
 .aligner {
@@ -52,8 +70,8 @@ a {
 
   img.logo {
     width: 50%;
-    min-width: 356px;
-    min-width: 256px;
+    min-width: 180px;
+    max-width: 300px;
   }
 
   ul.socials {
@@ -69,9 +87,10 @@ a {
     li {
       margin: 0 20px;
 
-      a {
-        opacity: .6;
+      a.button {
+        opacity: .9;
         transition: opacity 0.3s;
+        width: 220px;
 
         &:hover {
           opacity: 1;
